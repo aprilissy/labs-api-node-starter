@@ -57,16 +57,16 @@ There are 3 options to get postgresql installed locally [Choose one]:
 - run: `npm run knex seed:run` to populate your db with some data.
 - run: `npm run tests` to confirm all is setup and tests pass.
 - run: `npm run watch:dev` to start nodemon in local dev enviornment.
+  > Make sure to update the details of the app name, description and version in
+  > the `package.json` and `config/jsdoc.js` files.
 
-> Make sure to update the details of the app name, description and version in
-> the `package.json` and `config/jsdoc.js` files.
-
-> A note for Windows Users: <br>
-> If you are using Docker and one or more containers are red / refreshing continuously you will need to make changes to the `docker-compose.yml` file. <br>
+> A note for Windows Users:
 >
-> - In `docker-compose.yml` `services:` `vloumes:` change `- ./data/pg:/var/lib/postgresql/data` to `- pgdata:/var/lib/postgresql/data` <br>
-> - In `docker-compose.yml` at the end of the document add `volumes: pgdata:`. Note: this is not inside of `services` or `networks`. It is its own section. <br>
-> - Solution from [StackOverflow article](https://stackoverflow.com/questions/49148754/docker-container-shuts-down-giving-data-directory-has-wrong-ownership-error-wh). <br>
+> If you are using Docker and one or more containers are red / refreshing continuously you will need to make changes to the `docker-compose.yml` file.
+>
+> - In `docker-compose.yml` `services:` `vloumes:` change `- ./data/pg:/var/lib/postgresql/data` to `- pgdata:/var/lib/postgresql/data`
+> - In `docker-compose.yml` at the end of the document add `volumes: pgdata:`. Note: this is not inside of `services` or `networks`. It is its own section.
+> - Solution from [StackOverflow article](https://stackoverflow.com/questions/49148754/docker-container-shuts-down-giving-data-directory-has-wrong-ownership-error-wh).
 
 ## Contributing
 
